@@ -1,0 +1,91 @@
+<body style="background-color: gray">
+  
+</body>
+<style>
+  :root {
+    --bg-color: #fff09b;
+    --line-color: #003459;
+    --alpha-color1: rgba(255, 255, 255, 0.5);
+    --alpha-color2: rgba(255, 255, 255, 0.75);
+  width: 50%;
+  height: 50%;
+  margin: 150px auto;
+  animation: pulse 10s infinite;
+  background-color: var(--bg-color);
+  box-shadow: 0px 0px 180px ; 
+    
+}
+
+@keyframes pulse {
+  0% {
+    background-color: cyan;
+  }
+  5% {
+    background-color: red;
+  }
+  10% {
+    background-color: black;
+  }
+   15% {
+    background-color: purple;
+  }
+  20% {
+    background-color: cyan;
+  }
+  25% {
+    background-color: gray;
+  }
+  30% {
+    background-color: pink;
+  }
+  35% {
+    background-color: green;
+  }
+  40% {
+    background-color: orange;
+  }
+  45% {
+    background-color: cyan;
+  }
+  50% {
+    background-color: red;  
+  }
+  55% {
+    background-color: orange;
+  }
+  60% {
+    background-color: green;
+  }
+  65% {
+    background-color: black;
+  }
+  70% {
+    background-color: purple;
+}
+  80% {
+    background-color: yellow;
+  }
+  90% {
+    background-color: gray;
+  }
+  100% {
+    background-color: cyan;
+  }
+
+html,
+body {
+  height: 100%;
+}
+  }
+  </style>
+
+<div class="element"></div>
+<audio src="pop.mp3" loop="true"></audio>
+<script>
+  // audio and video tracks can't start playing until
+  // the viewer has interacted with the page.
+  // the JavaScript code below plays the audio element 
+  // if the viewer clicks anywhere on the page.
+  const track = document.querySelector('audio')
+  document.body.addEventListener('click', () => track.play())
+</script>
